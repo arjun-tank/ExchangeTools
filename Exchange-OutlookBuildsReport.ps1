@@ -1,4 +1,5 @@
-# RPC Logs Exchange Outlook Builds
+# RPC Logs Exchange - Outlook Builds
+# Please run this file in Exchange Management Shell on a server where majority of the mailboxes are located.
 
 # Exchange 2010 Path:
 #$logpath = 'C:\Program Files\Microsoft\Exchange Server\V14\Logging\RPC Client Access'
