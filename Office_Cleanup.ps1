@@ -40,6 +40,7 @@ if ($result) {
         write-host "`nRunning Workplace Join Cleanup script..`n"
         cmd /C $wpjScript
         write-host "`nPlease restart your machine.`n" -ForegroundColor Green
+        pause
     } Else {
 
         New-Item "$env:LOCALAPPDATA\OfficeLicenseCleanup" -ItemType "directory" -ea 0 1>$null
@@ -62,6 +63,7 @@ if ($result) {
             write-host "`nRunning Workplace Join Cleanup script..`n"
             cmd /C $wpjScript
             write-host "`nPlease restart your machine.`n" -ForegroundColor Green
+            pause
         } Else {
             write-host "`nERROR: Cannot find downloaded files.`n" -ForegroundColor Red
         }
